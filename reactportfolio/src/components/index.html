@@ -1,0 +1,73 @@
+<!--Index Page-->
+import React, { Component } from 'react'
+
+var About = React.createClass({
+    render: function() {
+      return (
+        <div>
+          <meta charSet="UTF-8" />
+          <title>Index Page</title>
+          {/* Bootstrap CSS */}
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+          <link rel="stylesheet" href="assets/css/style.css" />
+          {/*A Nav Bar with Name and Contact, Portfolio, About Me to the right*/}
+          <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+            <span className="navbar-brand mb-1 h1 mx-auto text-center">Aks Sreenivasan</span>
+            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span className="navbar-toggler-icon" />
+            </button>
+            {/*div containing toggable navigation*/}
+            <div className="collapse navbar-collapse" id="navbarSupportedContent">
+              {/*navigation menu*/}
+              <ul className="nav navbar-nav ml-auto text-right">
+                <li className="nav-item">
+                  <a className="nav-link" href="index.html">About Me</a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="portfolio2.html">Portfolio</a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="contact.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          {/*About Me Section*/}
+          <div className="container">
+            <br />
+            <div className="row">
+              <div className="col-md-8">
+                <div className="page-header">
+                  <h1> About Me </h1>
+                </div>
+                <div className="row">
+                  <div className="col-md-3">
+                    <img src="assets/images/image.png" href="assets/images/image.png" alt="Aks Picture" className="img-thumbnail" />
+                  </div>
+                  <div className="about col-md-9">
+                    <p> Hello! I'm Aks Sreenivasan. I'm from Singapore.<br />
+                      <br /> I have an Industrial and Systems Engineering degree from Auburn University, Auburn, AL and a Green Belt in Lean Six Sigma from IASSC. <br />
+                      <br />
+                      My past and current work experience includes work as a Business Analyst and Consultant for lean-six sigma based process improvement projects as well as digital transformation projects in banking and finance in both Singapore as well as Sydney,Australia.<br />
+                      <br />
+                      My programming skills include proficiency in Vanilla Javascript, Node, React, Express, Handlebars, Mongo, Matlab and SQL. I'm also very comfortable with Github and Heroku. Programming is a journey, so one of my goals is to constantly grow by revisiting
+                      my old projects and adding new functionalities.<br />
+                      <br />
+                      When I'm not working, I love to read, swim, listen to records and catch up with friends.</p>
+                  </div>
+                </div>
+              </div>
+              {/* Footer */}
+              <footer className="page-footer font-small blue fixed-bottom">
+                {/* Copyright */}
+                <div className="footer-copyright text-center py-3">© 2020 Copyright Aks</div>
+                {/* Copyright */}
+              </footer>
+              {/* Footer */}
+              {/* jQuery CDN */}
+              {/* Bootstrap JavaScript CDN */}
+            </div></div></div>
+      );
+    }
+  });
+  

@@ -1,0 +1,101 @@
+import React, { Component } from 'react'
+var Contact = React.createClass({
+    render: function() {
+      return (
+        <div>
+          {/*Contact Page*/}
+          <meta charSet="UTF-8" />
+          <title>Contact Page</title>
+          {/* Bootstrap CSS */}
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+          {/*A Nav Bar with Name and Contact, Portfolio, About Me to the right*/}
+          <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+            <span className="navbar-brand mb-1 h1 mx-auto text-center">Aks Sreenivasan</span>
+            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span className="navbar-toggler-icon" />
+            </button>
+            {/*div containing toggable navigation*/}
+            <div className="collapse navbar-collapse" id="navbarSupportedContent">
+              {/*navigation menu*/}
+              <ul className="nav navbar-nav ml-auto text-right">
+                <li className="nav-item">
+                  <a className="nav-link" href="index.html">About Me</a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="portfolio2.html">Portfolio</a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="contact.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          {/*Contact Form*/}
+          <form id="contact-form" method="post" action="contact.php" role="form">
+            <div className="container">
+              <div className="row">
+                <div className="col-md-8">
+                  <br />
+                  <h1>Contact Me</h1>
+                  <a href="mailto: aks.auburn@gmail.com"> Email: aks.auburn@gmail.com</a>
+                  <br />
+                  <span itemProp="telephone"><a href="tel:+61401542615">Tel: 0401542615</a></span>
+                </div>
+              </div>
+              <br />
+              {/* <h5> Or fill out the form below and I'll get back to you as soon as possible:</h5>
+              <div class="row">
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <label for="form_name"> Name </label>
+                          <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your name" required="required" data-error="Name is required.">
+                          <div class="help-block with-errors"></div>
+                      </div>
+                  </div>
+  
+              </div>
+              <div class="row">
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <label for="form_email"> Email Address </label>
+                          <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email" required="required" data-error="Valid email is required.">
+                          <div class="help-block with-errors"></div>
+                      </div>
+                  </div>
+  
+              </div>
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="form-group">
+                          <label for="form_message"> Message </label>
+                          <textarea id="form_message" name="message" class="form-control" placeholder="Message" rows="4" required="required" data-error="Please, leave a message."></textarea>
+                          <div class="help-block with-errors"></div>
+                      </div>
+  
+                      <form>
+                          <div class="form-group">
+                              <label for="exampleFormControlFile1">Include an Attachment</label>
+                              <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                          </div>
+                      </form>
+                  </div>
+                  <div class=" submit col-md-12">
+                      <input type="submit" class="btn btn-success btn-send" value="Send message" style="background: brown;">
+                  </div>
+              </div>
+          </div>
+  
+      </form> */}
+              {/* Footer */}
+              <footer className="page-footer font-small blue fixed-bottom">
+                {/* Copyright */}
+                <div className="footer-copyright text-center py-3">© 2020 Copyright Aks</div>
+                {/* Copyright */}
+              </footer>
+              {/* Footer */}
+              {/* jQuery CDN */}
+              {/* Bootstrap JavaScript CDN */}
+            </div></form></div>
+      );
+    }
+  });
