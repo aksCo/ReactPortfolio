@@ -1,8 +1,6 @@
-<!--Index Page-->
-import React, { Component } from 'react'
-
-var About = React.createClass({
-    render: function() {
+import React from 'react';
+import 'react-bootstrap';
+function About() {
       return (
         <div>
           <meta charSet="UTF-8" />
@@ -10,28 +8,6 @@ var About = React.createClass({
           {/* Bootstrap CSS */}
           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
           <link rel="stylesheet" href="assets/css/style.css" />
-          {/*A Nav Bar with Name and Contact, Portfolio, About Me to the right*/}
-          <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-            <span className="navbar-brand mb-1 h1 mx-auto text-center">Aks Sreenivasan</span>
-            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span className="navbar-toggler-icon" />
-            </button>
-            {/*div containing toggable navigation*/}
-            <div className="collapse navbar-collapse" id="navbarSupportedContent">
-              {/*navigation menu*/}
-              <ul className="nav navbar-nav ml-auto text-right">
-                <li className="nav-item">
-                  <a className="nav-link" href="index.html">About Me</a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="portfolio2.html">Portfolio</a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="contact.html">Contact</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
           {/*About Me Section*/}
           <div className="container">
             <br />
@@ -57,17 +33,8 @@ var About = React.createClass({
                   </div>
                 </div>
               </div>
-              {/* Footer */}
-              <footer className="page-footer font-small blue fixed-bottom">
-                {/* Copyright */}
-                <div className="footer-copyright text-center py-3">© 2020 Copyright Aks</div>
-                {/* Copyright */}
-              </footer>
-              {/* Footer */}
-              {/* jQuery CDN */}
-              {/* Bootstrap JavaScript CDN */}
             </div></div></div>
       );
     }
-  });
   
+  export default About;
