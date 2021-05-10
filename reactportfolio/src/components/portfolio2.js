@@ -1,6 +1,7 @@
 import React from 'react';
 import 'react-bootstrap';
 
+
 function Portfolio() {
       return (
         <div>
@@ -10,12 +11,13 @@ function Portfolio() {
           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
           <link rel="stylesheet" href="assets/css/style.css" /> 
           <h2>PORTFOLIO</h2>
-          <div id="myBtnContainer">
-            <button className="btn active" onclick="filterSelection('all')"> Show all</button>
-            <button className="btn" onclick="filterSelection('General Links')">General Links</button>
-            <button className="btn" onclick="filterSelection('Projects')">Projects</button>
-            {/* <button class="btn" onclick="filterSelection('GitHub')"> GitHub</button> */}
-          </div>
+          {/*<div id="myBtnContainer">
+            <button className="btn active" onClick={()=>filterSelection('all')}> Show all</button>
+            <button className="btn" onClick="()=>filterSelection('General Links')">General Links</button>
+            <button className="btn" onClick="()=>filterSelection('Projects')">Projects</button>
+            {/* <button className="btn" onclick="filterSelection('GitHub')"> GitHub</button> */}
+          {/* /* </div>}*/}
+
           {/* Portfolio Gallery Grid */}
           <div className="row">
             <div className="column General Links">
@@ -86,5 +88,20 @@ function Portfolio() {
         </div>
       );
       }
+/* const Projects = [{
+        img: 'assets/images/CC pic.png',
+        alt: 'Screenshot of Cocktails and Cuisine Application',
+        title: 'Cocktails and Cuisines',
+        Description: 'Search for different recipes by name. Features HTML, CSS, Accordians, JavaScript including jQuery, Foundation framework, and APIs from MealDB and DrinksDB',
+        link: "https://luuluu75.github.io//Cocktails-Cuisines/",
+        featured: true,
+    },
+    {
+        img: 'https://images.unsplash.com/photo-1502378735452-bc7d86632805?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&s=aa3a807e1bbdfd4364d1f449eaa96d82',
+        title: 'Sabiha Plummer',
+        featured: true,
+    },
+]; */
 
-  export default Portfolio;
+
+export default Portfolio;

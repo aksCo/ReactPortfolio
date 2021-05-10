@@ -1,30 +1,75 @@
 import React from 'react';
-import {Navbar, Nav, NavItem} from 'react-bootstrap';
+import {Navbar, Nav} from 'react-bootstrap';
+import 'react-bootstrap';
+import { Link, withRouter } from "react-router-dom";
 
 
-  function Header() {
+  /* function Header() {
     return (
-      <div>
-        <meta charSet="UTF-8" />
-        <title>Header</title>
-        {/* Bootstrap CSS */}
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
-        <link rel="stylesheet" href="assets/css/style.css" />
-          {/*div containing toggable navigation*/}
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            {/*navigation menu*/}
-            <ul className="nav navbar-nav ml-auto text-right">
-              <li className="nav-item">
-                <a className="nav-link" href="index.js">About Me</a>
+      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+      <Navbar.Brand href="#home">Aks Sreenivasan</Navbar.Brand>
+      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+      <Navbar.Collapse id="responsive-navbar-nav">
+        <Nav className="mr-auto">
+          <Nav.Link href="/index.js">About</Nav.Link>
+          <Nav.Link href="/contact.js">Contact</Nav.Link>
+          <Nav.Link href="/portfolio.js">Portfolio</Nav.Link>
+        </Nav>
+      </Navbar.Collapse>
+    </Navbar>
+          )};
+
+          import React from "react"; */
+
+
+function Header(props) {
+  return (
+    <div className="navigation">
+      <nav className="navbar navbar-expand navbar-dark bg-dark">
+        <div className="container">
+          <Link className="navbar-brand" to="/">
+            Aks Sreenivasan
+          </Link>
+
+          <div>
+            <ul className="navbar-nav ml-auto">
+              <li
+                className={`nav-item  ${
+                  props.location.pathname === "/" ? "active" : ""
+                }`}
+              >
+                <Link className="nav-link" to="/index">
+                  About
+                  <span className="sr-only">(current)</span>
+                </Link>
               </li>
-              <li className="nav-item">
-                <a className="nav-link" href="portfolio2.js">Portfolio</a>
+              <li
+                className={`nav-item  ${
+                  props.location.pathname === "/portfolio2" ? "active" : ""
+                }`}
+              >
+                <Link className="nav-link" to="/portfolio2">
+                  Portfolio
+                </Link>
               </li>
-              <li className="nav-item">
-                <a className="nav-link" href="contact.js">Contact</a>
+              <li
+                className={`nav-item  ${
+                  props.location.pathname === "/contact" ? "active" : ""
+                }`}
+              >
+                <Link className="nav-link" to="/contact">
+                  Contact
+                </Link>
               </li>
             </ul>
-          </div></div>
-          )};
-  export default Header;
+          </div>
+        </div>
+      </nav>
+    </div>
+  );
+}
+
+export default withRouter(Header);
+
+      
   
