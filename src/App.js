@@ -28,7 +28,8 @@ function App()
 {
     return (
       <div className="App">
-        <Router>
+        <Router basename="/reactportfolio"  >
+          
           <div> <Header/></div>
           <Switch>
             <Route path="/index" exact component={() => <About/>}/>
