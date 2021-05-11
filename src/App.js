@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Header from 'components/header'
-import About from 'components/index'
+import About from 'components/about'
 import Contact from 'components/contact'
 import Portfolio from 'components/portfolio2'
 import Footer from 'components/footer'
@@ -28,11 +28,9 @@ function App()
 {
     return (
       <div className="App">
-        
           <div> <Header/></div>
-         
           <Switch>
-            <Route path="/index" exact component={() => <About/>}/>
+            <Route path="/" exact component={() => <About/>}/>
             <Route path="/contact" exact component={() => <Contact/>}/>
             <Route path="/portfolio2" exact component={() => <Portfolio/>}/>
           </Switch>
