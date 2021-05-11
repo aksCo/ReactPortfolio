@@ -30,14 +30,12 @@ function App()
       <div className="App">
         
           <div> <Header/></div>
-          <Router>
+         
           <Switch>
-            
             <Route path="/index" exact component={() => <About/>}/>
             <Route path="/contact" exact component={() => <Contact/>}/>
             <Route path="/portfolio2" exact component={() => <Portfolio/>}/>
           </Switch>
-          </Router>
           <div><Footer/></div>
       </div>
     

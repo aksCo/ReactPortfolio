@@ -42,8 +42,8 @@ import 'react-bootstrap';
                 <img
                   className="img-fluid rounded mb-4 mb-lg-0"
                   className="img-thumbnail"
-                  src="assets/images/akspicture.png" width = '500px'height = '500px'
-                  href="assets/images/akspicture.png"
+                  src="public/assets/images/akspicture.png" width = '500px'height = '500px'
+                  href="public/assets/images/akspicture.png"
                   alt="Aks Picture"
                 />
               </div>

@@ -8,7 +8,7 @@ function Contact() {
               <div className="col-lg-7">
                 <img 
                    className="img-fluid rounded mb-4 mb-lg-0"
-                   src="assets/images/postcard.jpeg" width = '500px' height = '500px'
+                   src="public/assets/images/postcard.jpeg" width = '500px' height = '500px'
                    alt="contact"
                 />
               </div>
