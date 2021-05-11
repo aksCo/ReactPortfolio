@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import './App.css';
-import { HashRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Header from 'components/header'
 import About from 'components/index'
 import Contact from 'components/contact'
@@ -28,17 +28,17 @@ function App()
 {
     return (
       <div className="App">
-        <Router basename="/reactportfolio"  >
-          
+        <Router basename={process.env.PUBLIC_URL}>   
           <div> <Header/></div>
           <Switch>
             <Route path="/index" exact component={() => <About/>}/>
             <Route path="/contact" exact component={() => <Contact/>}/>
             <Route path="/portfolio2" exact component={() => <Portfolio/>}/>
           </Switch>
+          </Router>
           <div><Footer/></div>
-        </Router>
       </div>
+    
     );
   }
 
